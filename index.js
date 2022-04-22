@@ -7,7 +7,7 @@ client.on('ready', () => {
   setInterval(() => {
       let dayInterval = moment([2022, 4, 17]).diff(moment(), 'days');
       let weekInterval = (dayInterval-(dayInterval%7))/7;
-      client.user.setActivity(`UTBK, ${weekInterval} weeks left`, {type: "WATCHING"});
+      client.user.setActivity(`UTBK, ${dayInterval} days left`, {type: "WATCHING"});
   }, 10000)
 });
 
