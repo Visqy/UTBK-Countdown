@@ -5,9 +5,9 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS]});
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   setInterval(() => {
-      let dayInterval = moment([2022, 4, 17]).diff(moment(), 'days');
+      let dayInterval = moment([2022, 5, 23]).diff(moment(), 'days');
       let weekInterval = (dayInterval-(dayInterval%7))/7;
-      client.user.setActivity(`UTBK, ${dayInterval} days left`, {type: "WATCHING"});
+      client.user.setActivity(`Hasil SBMPTN, ${dayInterval} days left`, {type: "WATCHING"});
   }, 10000)
 });
 
